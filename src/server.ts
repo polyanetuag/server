@@ -5,7 +5,7 @@ import bodyParser from "body-parser";
 import { routes } from "./routes";
 
 const app = express();
-app.use(bodyParser.json({ limit: "100kb" }));
+app.use(bodyParser.json({ limit: "80Mb" }));
 
 app.use(cors());
 app.use(express.json());
